@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sombra Vértice</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+      color: #eaeaea;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(10, 10, 10, 0.8);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      font-family: 'Poetsen One', sans-serif;
+      font-size: 32px;
+      color: #ffeeaa;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #00ffc3;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .container {
+      padding: 120px 20px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contenido {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .historia {
+      max-width: 600px;
+      font-size: 17px;
+      line-height: 1.8;
+      text-align: justify;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .batman {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .sombra1 {
+      margin-left: 60px;
+      margin-top: -330px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .sombra2 {
+      margin-left: 0px;
+      margin-top: 60px;
+      height: 1000px;
+      width: 800px;
+      max-width: 1000px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    .poderes-section {
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .poderes-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #ffeeaa;
+    }
+
+    .poderes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .poder {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 5px solid #00ffc3;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .poder:hover {
+      transform: translateY(-5px);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .poder h3 {
+      margin-top: 0;
+      color: #00ffc3;
+    }
+
+    .footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .footer-content p {
+      margin: 5px 0;
+      font-size: 17px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sombra Vértice</h1>
+    <nav>
+      <a href="#historia">Historia</a>
+      <a href="#poderes">Poderes</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <p class="intro">
+      Elías Corvalán no buscaba ser un héroe. Solo quería construir una ciudad mejor, un lugar donde la gente pudiera
+      vivir sin miedo.
+      Pero cuando descubrió el poder escondido bajo Noctária, entendió que no bastaba con diseñar edificios.
+      Así nació Sombra Vértice: inteligente, reservado y siempre un paso adelante. No habla mucho, pero observa todo.
+      No busca fama, solo equilibrio. Se mueve entre lo visible y lo oculto, como una figura que aparece justo cuando
+      más se le necesita.
+    </p>
+
+    <div class="contenido" id="historia">
+      <img src="img/sombra_1.png" alt="Sombra Vértice" class="batman">
+      <div class="historia">
+        En la ciudad de Noctária, donde la luz apenas roza los rascacielos y la corrupción se arrastra como una neblina
+        espesa,
+        un joven arquitecto llamado Elías Corvalán vivía entre planos y estructuras que soñaban con cambiar la ciudad.
+        Pero sus ideas de diseño urbano, pensadas para mejorar la seguridad y el bienestar de los habitantes, eran
+        ignoradas
+        por los altos mandos que se lucraban del caos.
+        <br><br>
+        Una noche, mientras inspeccionaba una obra clandestina, Elías cayó por accidente en una grieta subterránea
+        desconocida,
+        producto de una excavación ilegal. Allí encontró una cámara oculta que contenía restos de una antigua
+        civilización
+        que utilizaba geometría sagrada como fuente de poder. Al tocar un extraño artefacto en forma de poliedro
+        suspendido en el aire,
+        una energía oscura y brillante al mismo tiempo se fusionó con su cuerpo.
+        <br><br>
+        Despertó horas después, diferente. Podía doblar el espacio a voluntad, crear esquinas donde no las había,
+        desaparecer entre los ángulos de la realidad y moverse por la ciudad como una sombra con forma definida.
+        Así nació Sombra Vértice, el guardián invisible de Noctária.
+        <br><br>
+        Desde entonces, con una capa compuesta de fibras arquitectónicas inteligentes y un visor que le permite leer
+        las tensiones estructurales del entorno, Sombra Vértice comenzó a combatir a quienes deformaban la ciudad para
+        su beneficio.
+        Desde mafias urbanas hasta políticos corruptos, nadie está a salvo de su justicia geométrica.
+      </div>
+    </div>
+
+    <div>
+      <img src="img/sombra_3.png" alt="Sombra Vértice" class="sombra1">
+    </div>
+
+    <div class="poderes-section" id="poderes">
+      <h2>Poderes</h2>
+      <div class="poderes-grid">
+        <div class="poder">
+          <h3>Pliegue Dimensional</h3>
+          <p>Puede doblar el espacio para moverse entre sombras, atravesar paredes o aparecer en otro lugar
+            instantáneamente.</p>
+        </div>
+        <div class="poder">
+          <h3>Aristas de Sombra</h3>
+          <p>Crea armas y trampas con sombras sólidas de forma geométrica, como cuchillas o jaulas oscuras.</p>
+        </div>
+        <div class="poder">
+          <h3>Visión Fractal</h3>
+          <p>Detecta patrones invisibles en estructuras y personas, revelando debilidades, rutas ocultas o mentiras</p>
+        </div>
+      </div>
+
+      <div>
+        <img src="img/sombra_2.png" alt="Sombra Vértice" class="sombra2">
+      </div>
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>Contactos:
+      <p> Celular: 3229008973 </p>
+      <p> Correo: jeronimobetancuryepesp@gmail.com </p>
+      <p> Colegio: La salle de campoamor </p>
+      <br>
+      <p>© 2025 Jeronimo Betancur. Todos los derechos reservados.</p>
+    </p>
+    
+    
+  </div>
+</footer>
+
+</html>
